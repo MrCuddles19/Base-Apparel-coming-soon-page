@@ -29,7 +29,7 @@ body {
 .hero-1 {
     flex: 1.6;
     height: 100vh;
-    padding-top: 4rem;
+    padding-top: 3.5rem;
     padding-left: 8.5rem;
     padding-bottom: 6rem;
     display: flex;
@@ -42,7 +42,7 @@ body {
 
 .heading{
     font-size: 4rem;
-    margin-top: 8rem;
+    margin-top: 7rem;
     width: 4rem;
     text-transform: uppercase;
     letter-spacing: .8rem;
@@ -57,10 +57,10 @@ body {
 }
 
 .description{
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--Desaturated-Red);
     width: 24rem;
-    line-height: 1.2rem;
+    line-height: 1.3rem;
     margin-top: 1.5rem;
 }
 
@@ -92,6 +92,7 @@ body {
     padding: 10px;
     border: none;
     flex: 1;
+    font-size: 1.1rem;
 }
 
 .input-field:focus {
@@ -123,6 +124,10 @@ body {
      box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.5);
 }
 
+.submit-btn:active {
+    transform: scale(.9);
+}
+
 .arrow {}
 
 .notification-red {
@@ -131,6 +136,7 @@ body {
     margin-left: 1.2rem;
     font-size: .9rem;
     color: var(--Soft-Red);
+    transition: all .2s ease;
 }
 
 .notification-green {
@@ -139,25 +145,34 @@ body {
     margin-left: 1.2rem;
     font-size: .9rem;
     color: var(--green);
+    transition: all .2s ease;
 }
 
 .loading{
     display: none;
     margin-top: .5rem;
     margin-left: 1.2rem;
-    font-size: .9rem;
+    font-size: 1rem;
     color: var(--Dark-Grayish-Red);
+    transition: all .2s ease;
+    position: relative;
+    width: 10rem;
 }
 
 
 .load {
-    transform: scale(.5);
-    transform-origin: left;
+    background-color: #FFFBFB;
+    width: .8rem;
+    position: absolute;
+    left: 36%;
+    color: #FFFBFB;
+    opacity: 0;
+    animation: blink 1s infinite ease-in-out;
 }
 
 .hero-2{
     flex: 1.4;
-    height: 100vh;
+    height: 99vh;
     position: relative;
     /*background: url(images/hero-desktop.jpg);
     background-position: 50% 50%;
@@ -177,6 +192,11 @@ body {
 .logo-mobi {
     display: none;
 }
+
+.red {
+    border: .2rem solid var(--Soft-Red);
+}
+
 .visible {
     opacity: 1;
 }
@@ -246,11 +266,26 @@ body {
 @media (max-width: 375px) {
     .input-section {
         width: 20rem;
+
     }
 
     .heading {
         font-size: 3.5rem;
 
     }
+
+    .email-input {
+
+    }
+
+    .hero-1 {
+        padding-bottom: 6rem;
+    }
     
+}
+
+@keyframes blink {
+    to {
+        opacity: 1;
+    }
 }
