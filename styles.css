@@ -248,13 +248,12 @@ body {
     .hero-1 {
         flex: 1.6;
         height: 100vh;
-        padding-top: 4rem;
-        padding-left: 2rem;
+        padding-top: 0;
+        padding-left: 0;
         padding-bottom: 6rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0;
     }
     
     .input-section {
@@ -273,11 +272,6 @@ body {
         font-size: 3.5rem;
 
     }
-
-    .hero-1 {
-        padding-bottom: 6rem;
-    }
-    
 }
 
 @keyframes blink {
