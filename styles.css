@@ -128,7 +128,7 @@ body {
     transform: scale(.9);
 }
 
-.arrow {}
+
 
 .notification-red {
     display: none;
@@ -271,10 +271,6 @@ body {
 
     .heading {
         font-size: 3.5rem;
-
-    }
-
-    .email-input {
 
     }
 
