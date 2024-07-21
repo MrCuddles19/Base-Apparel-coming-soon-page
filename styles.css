@@ -205,6 +205,20 @@ body {
     display: block;
 }
 
+@media (min-width: 1440px) {
+    .container {
+        height: 120vh;
+    }
+
+    .hero-1 {
+        height: 120vh;
+    }
+
+    .hero-2 {
+        height: 120vh;
+    }
+}
+
 @media (max-width: 430px) {
     
     .logo-pc {

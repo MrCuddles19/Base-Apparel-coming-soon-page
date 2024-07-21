@@ -8,6 +8,8 @@ const notificationRed = document.querySelector('.notification-red');
 const notificationGreen = document.querySelector('.notification-green');
 const loading = document.querySelector('.loading');
 
+console.log(inputField);
+
 inputField.addEventListener('input', () => {
     const email = inputField.value;
 
@@ -53,3 +55,6 @@ function validateEmail(email) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
 }
+
+
+
