@@ -286,12 +286,3 @@ body {
 }
 
 
-@media (min-width: 1200px) {
-    .container, .hero-1, .hero-2 {
-        height: 120vh;
-    }
-
-    .logo-pc {
-        margin-top: 1rem;
-    }
-}
